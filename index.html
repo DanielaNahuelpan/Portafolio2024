@@ -5,12 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAFOLIO 2024</title>
     <link rel="stylesheet" href="./assets/css/miestilo.css">
+    <link rel="stylesheet" href="./assets/css/css_bs/bootstrap.css">
 </head>
-<body>
-    <H1>Hola! bienvenido a mi portaoflio</H1>
-    <p>Aqui puedes encontrar mis datos</p>
+
+<body onload="asignarEventos()">
+
+    <!-- HEADER -->
+    <header class="col-xs-12 bg-info">
+        <h1 id="tituloEspecial">Mi Portafolio 2024 </h1>
+        <h2>Bienvenido a mi portafolio</h2>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+        <div class="row">
+            <article class="col-xs-12 col-md-8 bg-warning">
+                <p id="parrafoPresentacion"> Soy aprendiz de programación, cursé el bootcamp "Desarrollo Ruby on Rails para emprendimientos de tipo startup" en año 2023. Actualmente curso bootcamp de front-end "Desarrollo de aplicaciones front-end trainee". Mi entusiasmo por aprender es incesante y estoy comprometida con la idea de especializarme en programación para contribuir al sector de Tecnologías de la Información en Chile. Como mujer dedicada al mundo de la tecnología, estoy decidida a seguir adquiriendo conocimientos y avanzar constantemente hacia nuevos logros </p>
+                <p id="segundoParrafo"> En estos momentos me gustaría seguir especializandome en TI</p>
+                <a href="https://www.linkedin.com/in/daniela-paz-nahuelpan-sierra-10b2b813b" target="_blank" style="display: block; margin-bottom: 10px;">Conéctate conmigo en LinkedIn</a>
+                <img src="./assets/img/Daniela Nahuelpán.jpg" alt="Daniela" width="100" height="100" style="display: block; margin-bottom: 10px;">
+                <button class="btn btn-primary" onclick="cambiarColorTitulo()"> Cambiar titulo</button>
+            </article>
+            <aside class="col-xs-12 col-md-4 bg-primary">
+                <h3>Mis otras ocupaciones:</h3>
+                    <ul>
+                        <li> Cirujano dentista de profesión</li>
+                        <li> Tengo un emprendimiento de ropa reciclada</li>
+                        <li> Me gustan la fotografía</li>
+                    </ul>
+                    <div id="divEspecial">
+                        <p></p>
+                    </div>
+
+                    <div id="contenedorForm">
+                                <form>
+                                <div class="mb-3">
+                                    <label for="emailContacto" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="emailContacto" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">No compartiremos su email con nadie.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefonoContacto" class="form-label">Teléfono:</label>
+                                    <input type="number" class="form-control" id="telefonoContacto">
+                                </div>
+
+                                <button id="btnForm" type="button" class="btn btn-success">Enviar</button>
+                                </form>
+                    </div>
+            </aside>
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER -->
     <footer>
-        Aquí va el footer
+        <small>Desarrollado por : Daniela Nahuelpán--</small>
     </footer>
+    <script src="./assets/js/miscript.js"></script>
+    <script src="./assets/js/js_bs/bootstrap.bundle.js"></script>
 </body>
 </html>
